@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* Size */
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+
+    /* Presentation properties */
+    background-color: rgb(242, 234, 228);
+
+    /* Set as flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-card {
+    /* Size */
+    margin: 10px;
+    border-radius: 10px;
+
+    /* Presentation */
+    background-color: white;
+
+    /* Control child presentation */
+    overflow: hidden;
+}
+
+.item-image {
+    width: 100%;
+    content: url("images/image-product-mobile.jpg");
+}
+
+.item-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.item-summary {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .2rem;
+    color: rgb(127, 127, 135);
+}
+
+.item-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 34px;
+    line-height: 94%;
+}
+
+.item-description {
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(127, 127, 135);
+}
+
+.item-price-section {
+    margin-bottom: 17px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.item-price {
+    display: inline;
+}
+
+.item-current-price {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(79, 127, 106);
+
+    margin-right: 20px;
+}
+
+.item-rrp {
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(127, 127, 135);
+    text-decoration: line-through;
+}
+
+.item-add-to-chart-button {
+    width: 100%;
+    height: 46px;
+    border-radius: 4px;
+
+    border-color: transparent;
+    background-color: rgb(79, 127, 106);
+    color: white;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.item-add-to-chart-button:active {
+    background-color: rgb(36, 63, 50);
+}
+
+.item-button-icon {
+    content: url("images/icon-cart.svg");
+    margin: 10px;
+}
+
+.item-button-tex {
+    display: inline;
+}

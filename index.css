@@ -33,6 +33,8 @@ body {
 
     /* Control child presentation */
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .item-image {
@@ -71,8 +73,8 @@ body {
 }
 
 .item-price-section {
-    margin-bottom: 17px;
-    height: 50px;
+    margin-bottom: 24px;
+    height: 40px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -126,4 +128,30 @@ body {
 
 .item-button-tex {
     display: inline;
+}
+
+@media (min-width: 600px) {
+    .item-card {
+        flex-direction: row;
+        align-items: center;
+        max-height: 420px;
+        max-width: 550px;
+    }
+
+    .item-image {
+        max-height: 420px;
+        width: auto;
+        content: url("images/image-product-desktop.jpg");
+    }
+
+    .item-name {
+        margin-top: 16px;
+    }
+
+    .item-description {
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(127, 127, 135);
+        line-height: 1.5rem;
+    }
 }
